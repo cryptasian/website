@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="no-js" lang="en">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vyrde</title>
 
-    <!-- Site favicons -->
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Vyrde</title>
+    <meta name="description" content="We are building a comprehensive and compliant solution for the emerging cannabis industry.">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="green">
     <meta name="apple-mobile-web-app-title" content="Vyrde">
@@ -24,113 +41,175 @@
     <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Website styles -->
-
-    <style>
-        body,
-        html {
-            height: 100vh;
-            margin: 0;
-        }
-
-        .hero-image {
-            background-image: url("images/hero-bg.jpg");
-            height: 120vh;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-text {
-            text-align: center;
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: black;
-        }
-
-        .hero-text button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 10px 25px;
-            color: white;
-            background-color: rgb(42, 122, 42);
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .hero-text button:hover {
-            background-color: rgba(30, 80, 30, 0.692);
-            color: white;
-        }
-
-        .admin-jumbotron {
-            opacity: 0.85;
-            background-color: #ddd;
-            position: relative;
-            text-align: center;
-            width: 100%;
-            height: 230px;
-            margin-top: 30%;
-            z-index: 1;
-        }
-
-        .modal-content {
-            opacity: 0.85;
-            background-color: rgb(187, 187, 187);
-        }
-
-        input {
-            text-align: center;
-            min-width: 100px;
-        }
-    </style>
-
-    <link rel="stylesheet" href="css/bootstrap-410-min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/fa.css">
-    <link rel="stylesheet" href="css/cryptocurrency.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
 </head>
 
-<body class="hero-image">
-    <div class="admin-jumbotron jumbotron-fluid animated fadeInUp">
-        <div class="hero-text">
-            <h1 style="font-size:50px">Vyrde</h1>
-            <p>We are building a comprehensive and compliant solution for the emerging cannabis industry</p>
-            <p>
-                <button class="button btn animated fadeIn" onclick="mailFunction()">
-                    <span>CONTACT US </span>
-                </button>
-                <script>
-                    function mailFunction() {
-                        var x = document.doctype.name;
-                        window.open("mailto:ventures@resonova.com", "_blank",
-                            "width=1000,height=400,resizable");
-                    }
-                </script>
-            </p>
+<body>
+
+    <!-- home
+    ================================================== -->
+    <main class="s-home s-home--static">
+
+        <div class="overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <div class="col-twelve home-content__text pull-right">
+                    <h3>Vyrde Incorporated</h3>
+
+                    <h1>
+                    We are building a comprehensive and <br>
+                    compliant solution for the emerging <br> cannabis industry.
+                    </h1>
+
+                    <p>
+                    We are currently designing our company website. In the meantime, if you would like to learn more and receive updates, please submit your email. We will be in touch! 
+                    </p>
+
+                    <div class="form">
+                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                            <form action="https://formspree.io/natalie@resonova.com" method="POST">
+                                <div class="row g-margin-b-40--xs">
+                                <div class="col-sm-6 g-margin-b-20--xs g-margin-b-0--md">
+                                <div class="g-margin-b-20--xs">
+                                        <input type="email" name="email" placeholder="Your email">
+                                <div class="validation"></div>
+                                </div>
+                                </div>
+                                <div class="g-text-center--xs">
+                                    <button type="submit" class="text-uppercase btn btn--primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>    
+                    </div>
+                </div>  <!-- end home-content__text -->
+
+                
+
+            </div>  <!-- end home-content__main -->
+
+            <ul class="home-social">
+                <!--<li>
+                <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+                </li>-->
+                <li>
+                <a href="https://twitter.com/vyrdeinc"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+                </li>
+                <li>
+                <a href="https://www.instagram.com/vyrdeinc/"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+                </li>
+                <li>
+                <a href="https://github.com/Vyrde/"><i class="fab fa-github" aria-hidden="true"></i><span>Github</span></a>
+                </li>
+                <li>
+                <a href="https://t.me/vyrdeinc"><i class="fab fa-telegram" aria-hidden="true"></i><span>Telegram</span></a>
+                </li>
+            </ul> <!-- end home-social -->
+
+            <div class="row home-copyright">
+                <span>Copyright 2018 Vyrde Inc.</span> 
+                <span>Design by <a href="https://resonova.com">ResoNova</a></span>
+            </div> <!-- end home-copyright -->
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+    </main> <!-- end s-home -->
+
+    <!-- info
+    ================================================== -->
+    <a class="info-toggle" href="#0">
+        <span class="info-menu-icon"></span>
+    </a>
+
+    <div class="s-info">
+
+        <div class="row info-wrapper">
+
+            <div class="col-seven tab-full info-main">
+                <h1>Vyrde Incorporated</h1>
+                <p>
+                    We are building a comprehensive and compliant solution for the emerging cannabis industry. Connect with us to stay up to date on the latest news and to join us on our growth journey! 
+                </p>
+            </div>
+
+            <div class="col-four tab-full pull-right info-contact">
+
+                <div class="info-block">
+                    <h3>Start A Conversation</h3>
+                    <p>
+                        <a href="mailto:chad@vyrde.com" class="info-email">chad@vyrde.com</a><br>
+                        <a href="https://t.me/vyrdeinc" class="'info-phone">Telegram Chat!</a>
+                    </p>
+                </div>
+<!--
+                <div class="info-block">
+                    <h3>Visit Our Office</h3>
+                    
+                    <p class="info-address">
+                        1600 Amphitheatre Parkway<br>
+                        Mountain View, CA<br>
+                        94043 US
+                    </p>
+                </div>-->
+
+                <div class="info-block">
+                    <h3>Connect With Us</h3>
+                    
+                    <ul class="info-social">
+                        <!--<li>
+                            <a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span>Facebook</span></a>
+                        </li>-->
+                        <li>
+                            <a href="https://twitter.com/vyrdeinc"><i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span>Twiiter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/vyrdeinc/"><i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span>Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Vyrde/"><i class="fab fa-github" aria-hidden="true"></i>
+                            <span>Github</span></a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/vyrdeinc"><i class="fab fa-telegram" aria-hidden="true"></i>
+                            <span>Telegram</span></a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>  <!-- end info contact -->
+
+        </div>  <!-- end info wrapper -->
+
+    </div> <!-- end s-info -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </div>
 
-
-    </div>
-    <!-- End of Modal Section -->
-
-    <!-- Bootstrap core JavaScript
+    <!-- Java Script
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 
 </body>
